@@ -12,8 +12,8 @@
 
 <br />
 
-You've got some test cases in TestRail that are automated and the results are ouputted in a
-junit-compliant format. This will report the results as a run in TestRail.
+You've got some test cases in TestRail that are automated and the results are ouputted in a JUnit
+format. This will report the results as a run in TestRail.
 
 <br />
 
@@ -45,7 +45,7 @@ npm i junit-testrail-reporter
      ...
    ```
 
-2. Configure and run your tests to output a junit-compliant test report
+2. Configure and run your tests to output a JUnit test report
 
    - https://github.com/jest-community/jest-junit
    - https://github.com/michaelleeallen/mocha-junit-reporter
