@@ -1,6 +1,6 @@
 {
   "name": "junit-testrail-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Report JUnit test results to TestRail",
   "license": "MIT",
   "repository": {
