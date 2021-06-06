@@ -43,7 +43,9 @@ const execute = async () => {
       type: 'string',
     });
 
-  const options = cli.parse(argv.slice(2));
+  const options: Partial<
+    Omit<JUnitTestRailReporter.Configuration, 'projectId'> & { projectId?: string }
+  > = cli.parseSync(argv.slice(2));
 
   const reporter = new Reporter({
     host: options.host,
