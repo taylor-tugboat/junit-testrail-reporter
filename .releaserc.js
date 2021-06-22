@@ -1,9 +1,10 @@
 module.exports = {
-  branches: ['main'],
+  branches: ['main', 'test'],
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
     '@semantic-release/changelog',
+    'semantic-release-jira-plugin',
     [
       '@semantic-release/npm',
       {
