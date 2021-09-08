@@ -17,8 +17,7 @@
     "ci:lint": "eslint './**/*.@(js|js|ts|ts)'",
     "ci:release": "semantic-release",
     "ci:types": "tsc --noEmit",
-    "ci:validate": "npm-run-all ci:lint ci:types",
-    "prepare": "is-ci || husky install"
+    "ci:validate": "npm-run-all ci:lint ci:types"
   },
   "files": [
     "dist",
@@ -59,7 +58,6 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "husky": "^6.0.0",
     "is-ci": "^3.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
