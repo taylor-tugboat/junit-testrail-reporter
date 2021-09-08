@@ -13,11 +13,10 @@
     "junit-testrail-reporter": "./dist/cli.js"
   },
   "scripts": {
-    "ci:build": "tsc",
-    "ci:lint": "eslint './**/*.@(js|js|ts|ts)'",
-    "ci:release": "semantic-release",
-    "ci:types": "tsc --noEmit",
-    "ci:validate": "npm-run-all ci:lint ci:types"
+    "lint": "eslint './**/*.@(js|js|ts|ts)'",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm-run-all lint typecheck",
+    "prepare": "tsc"
   },
   "files": [
     "dist",
